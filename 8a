@@ -1,0 +1,28 @@
+
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    float o[10], e[10], chi = 0;
+
+    printf("Enter number of observations: ");
+    scanf("%d", &n);
+
+    printf("Enter observed and expected values:\n");
+    for(i = 0; i < n; i++) {
+        scanf("%f%f", &o[i], &e[i]);
+        chi += (o[i]-e[i])*(o[i]-e[i])/e[i];
+    }
+
+    printf("Chi-Square Value = %.2f", chi);
+
+    return 0;
+}
+#output
+Enter number of observations: 3
+Enter observed and expected values:
+20 25
+30 25
+50 50
+
+Chi-Square Value = 2.00

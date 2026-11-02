@@ -1,0 +1,30 @@
+
+#include <stdio.h>
+
+int main() {
+    int n, i;
+
+    printf("Enter number of frames: ");
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; i++) {
+        printf("\nSending Frame %d", i);
+        printf("\nAcknowledgement received");
+    }
+
+    printf("\n\nAll frames sent successfully.");
+    return 0;
+}
+#output
+  Enter number of frames: 3
+
+Sending Frame 1
+Acknowledgement received
+
+Sending Frame 2
+Acknowledgement received
+
+Sending Frame 3
+Acknowledgement received
+
+All frames sent successfully.
